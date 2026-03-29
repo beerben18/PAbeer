@@ -1,236 +1,314 @@
 <!DOCTYPE html>
-<html lang="th">
+<html class="light" lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พรรณปภรณ์ เกษวิริยะกิจ - แฟ้มสะสมผลงาน (PA)</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ครูพรรณปภรณ์ เกษวิริยะกิจ | PA Portfolio</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Kanit:wght@200;300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "on-primary-fixed-variant": "#8f0045",
+                  "on-surface-variant": "#584046",
+                  "primary-container": "#ad1457",
+                  "tertiary-fixed-dim": "#ffb0cc",
+                  "surface-container-high": "#e8e8ea",
+                  "surface-container-lowest": "#ffffff",
+                  "surface-container-low": "#f3f3f5",
+                  "surface-tint": "#b41b5c",
+                  "primary": "#860040",
+                  "surface-container": "#eeeef0",
+                  "inverse-surface": "#2f3132",
+                  "primary-fixed": "#ffd9e1",
+                  "secondary": "#ab2c5d",
+                  "surface-variant": "#e2e2e4",
+                  "tertiary-container": "#a22863",
+                  "inverse-on-surface": "#f0f0f2",
+                  "surface-container-highest": "#e2e2e4",
+                  "secondary-fixed": "#ffd9e1",
+                  "on-tertiary-container": "#ffc0d5",
+                  "tertiary-fixed": "#ffd9e4",
+                  "on-error": "#ffffff",
+                  "on-primary-fixed": "#3f001a",
+                  "on-secondary-fixed": "#3f001b",
+                  "on-tertiary": "#ffffff",
+                  "on-background": "#1a1c1d",
+                  "surface-bright": "#f9f9fb",
+                  "surface": "#f9f9fb",
+                  "error": "#ba1a1a",
+                  "surface-dim": "#d9dadc",
+                  "inverse-primary": "#ffb1c5",
+                  "on-tertiary-fixed-variant": "#890f50",
+                  "outline": "#8c7076",
+                  "secondary-container": "#fd6c9c",
+                  "primary-fixed-dim": "#ffb1c5",
+                  "on-secondary-fixed-variant": "#8b0e45",
+                  "outline-variant": "#dfbec5",
+                  "error-container": "#ffdad6",
+                  "on-secondary": "#ffffff",
+                  "on-primary-container": "#ffc0cf",
+                  "on-primary": "#ffffff",
+                  "secondary-fixed-dim": "#ffb1c5",
+                  "on-tertiary-fixed": "#3e0020",
+                  "tertiary": "#83074b",
+                  "on-surface": "#1a1c1d",
+                  "background": "#f9f9fb",
+                  "on-secondary-container": "#6e0034",
+                  "on-error-container": "#93000a"
+                },
+                fontFamily: {
+                  "headline": ["Plus Jakarta Sans", "Kanit", "sans-serif"],
+                  "body": ["Sarabun", "Inter", "sans-serif"],
+                  "label": ["Inter", "Sarabun", "sans-serif"],
+                  "plus-jakarta-sans": ["Plus Jakarta Sans"],
+                  "kanit": ["Kanit", "sans-serif"],
+                  "sarabun": ["Sarabun", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+              },
+            },
+          }
+        </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f9f9fb;
+            color: #1a1c1d;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(134, 0, 64, 0.04);
+        }
+        .ghost-text {
+            user-select: none;
+            pointer-events: none;
+        }
+    </style>
 </head>
-<body>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#hero">หน้าแรก</a></li>
-                <li><a href="#about">ข้อมูลส่วนตัว</a></li>
-                <li><a href="#pa">ข้อตกลง PA</a></li>
-                <li><a href="#challenge">นวัตกรรม</a></li>
-                <li><a href="#gallery">ผลงาน</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>พรรณปภรณ์ เกษวิริยะกิจ</h1>
-                <p class="position">ตำแหน่งครู วิทยฐานะเชี่ยวชาญ</p>
-                <p class="school">โรงเรียนเทศบาลท่าอิฐ กองการศึกษา เทศบาลท่าอิฐ</p>
+<body class="antialiased">
+    <!-- TopAppBar -->
+    <header class="bg-[#f9f9fb]/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-2xl font-black text-[#860040] font-plus-jakarta-sans tracking-tight">
+                PA PORTFOLIO
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-kanit">
+                <a class="text-[#860040] font-bold border-b-2 border-[#860040] pb-1 transition-all" href="index.html">หน้าแรก</a>
+                <a class="text-slate-600 font-medium hover:text-[#860040] transition-colors" href="profile.html">ข้อมูลส่วนตัว</a>
+                <a class="text-slate-600 font-medium hover:text-[#860040] transition-colors" href="pa-performance.html">ข้อตกลง PA</a>
+                <a class="text-slate-600 font-medium hover:text-[#860040] transition-colors" href="#gallery">รูปผลงาน</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="hidden md:block px-6 py-2 rounded-full border border-primary text-primary font-bold text-sm hover:bg-pink-50 transition-all duration-300 font-kanit">
+                    ติดต่อ
+                </button>
+                <span class="material-symbols-outlined text-slate-600 cursor-pointer" data-icon="account_circle">account_circle</span>
             </div>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>ข้อมูลส่วนตัว</h2>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32">
+            <div class="absolute top-0 left-0 text-[12rem] font-black opacity-[0.03] ghost-text leading-none -translate-x-12 translate-y-12 text-primary font-headline">
+                EXCELLENCE
             </div>
-            <div class="profile-card">
-                <img src="1.jpg" alt="พรรณปภรณ์ เกษวิริยะกิจ" class="profile-img">
-                <div class="profile-info">
-                    <h3>ประวัติโดยย่อ</h3>
-                    <div class="info-item">
-                        <i class="fas fa-user"></i>
+            <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+                <div class="md:col-span-7">
+                    <div class="mb-4 inline-flex items-center px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold tracking-wider uppercase font-kanit">
+                        Academic Portfolio 2568
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-on-background font-headline leading-[1.2] mb-6 tracking-tight">
+                        Portfolio PA: <br/>
+                        <span class="text-primary bg-clip-text">พรรณปภรณ์ เกษวิริยะกิจ</span>
+                    </h1>
+                    <div class="flex items-center gap-4 mb-10">
+                        <div class="h-12 w-1 bg-primary rounded-full"></div>
                         <div>
-                            <strong>ชื่อ-นามสกุล</strong>
-                            <p>นางพรรณปภรณ์ เกษวิริยะกิจ</p>
+                            <p class="text-2xl font-bold text-on-surface leading-tight font-kanit">ครูพรรณปภรณ์ เกษวิริยะกิจ</p>
+                            <p class="text-on-surface-variant font-medium font-kanit">ตำแหน่งครู วิทยฐานะเชี่ยวชาญ • โรงเรียนเทศบาลท่าอิฐ</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-id-badge"></i>
-                        <div>
-                            <strong>ตำแหน่ง</strong>
-                            <p>ครู วิทยฐานะเชี่ยวชาญ</p>
+                    <div class="flex flex-wrap gap-4 font-kanit">
+                        <a href="pa-performance.html" class="px-8 py-4 rounded-full bg-primary text-on-primary font-bold editorial-shadow hover:scale-[1.02] active:scale-[0.98] transition-all">
+                            ดูผลการปฏิบัติงาน
+                        </a>
+                        <a href="profile.html" class="px-8 py-4 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-bold hover:bg-opacity-90 transition-all">
+                            ประวัติส่วนตัว
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-5 relative">
+                    <div class="aspect-[4/5] rounded-[2rem] overflow-hidden editorial-shadow bg-surface-container-high">
+                        <img alt="Teacher Portrait" class="w-full h-full object-cover" src="1.jpg"/>
+                    </div>
+                    <!-- Aesthetic floating element -->
+                    <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl editorial-shadow max-w-[200px]">
+                        <p class="text-xs font-bold text-primary mb-1 uppercase tracking-tighter font-kanit">สถานะปัจจุบัน</p>
+                        <p class="text-sm text-on-surface-variant font-medium leading-relaxed font-sarabun">ประเมินผลการพัฒนางานตามข้อตกลง (PA) ประจำปีงบประมาณ 2568</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Stats Section -->
+        <section class="py-20 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Stat Card 1 -->
+                    <div class="bg-surface-container-lowest p-10 rounded-xl editorial-shadow group hover:-translate-y-2 transition-transform duration-500">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-primary text-4xl" data-icon="groups">groups</span>
+                            <span class="text-4xl font-black text-outline-variant/30 font-headline">01</span>
+                        </div>
+                        <h3 class="text-4xl font-extrabold text-on-surface font-headline mb-2">25</h3>
+                        <p class="text-on-surface-variant font-medium tracking-wide font-kanit">นักเรียนกลุ่มเป้าหมาย</p>
+                        <div class="mt-6 h-1 w-12 bg-primary group-hover:w-full transition-all duration-700"></div>
+                    </div>
+                    <!-- Stat Card 2 -->
+                    <div class="bg-surface-container-lowest p-10 rounded-xl editorial-shadow group hover:-translate-y-2 transition-transform duration-500">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-primary text-4xl" data-icon="auto_stories">auto_stories</span>
+                            <span class="text-4xl font-black text-outline-variant/30 font-headline">02</span>
+                        </div>
+                        <h3 class="text-4xl font-extrabold text-on-surface font-headline mb-2">4</h3>
+                        <p class="text-on-surface-variant font-medium tracking-wide font-kanit">ชุดแบบฝึกทักษะ</p>
+                        <div class="mt-6 h-1 w-12 bg-primary group-hover:w-full transition-all duration-700"></div>
+                    </div>
+                    <!-- Stat Card 3 -->
+                    <div class="bg-surface-container-lowest p-10 rounded-xl editorial-shadow group hover:-translate-y-2 transition-transform duration-500">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-primary text-4xl" data-icon="verified">verified</span>
+                            <span class="text-4xl font-black text-outline-variant/30 font-headline">03</span>
+                        </div>
+                        <h3 class="text-4xl font-extrabold text-on-surface font-headline mb-2">60%</h3>
+                        <p class="text-on-surface-variant font-medium tracking-wide font-kanit">เป้าหมายการผ่านเกณฑ์</p>
+                        <div class="mt-6 h-1 w-12 bg-primary group-hover:w-full transition-all duration-700"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Focus Areas (PA Goal) -->
+        <section class="py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-8 relative">
+                <div class="absolute right-0 top-0 text-[10rem] font-black opacity-[0.03] ghost-text leading-none translate-x-1/4 -translate-y-1/4 text-primary font-headline">
+                    GOALS
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-sm font-bold text-primary tracking-[0.2em] uppercase mb-4 font-kanit">ประเด็นท้าทาย</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold text-on-background font-headline leading-tight mb-8">
+                            การพัฒนาทักษะคณิตศาสตร์: <br/>
+                            <span class="text-on-surface-variant">"การบวกที่ผลบวกไม่เกิน 100"</span>
+                        </h3>
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <div class="shrink-0 w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+                                    <span class="material-symbols-outlined" data-icon="lightbulb">lightbulb</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2 font-kanit">Active Learning Innovation</h4>
+                                    <p class="text-on-surface-variant leading-relaxed font-sarabun">มุ่งเน้นการจัดการเรียนรู้เชิงรุกโดยใช้ชุดแบบฝึกทักษะ 4 ชุด เพื่อพัฒนาผลสัมฤทธิ์ทางการเรียนของนักเรียนชั้น ป.1/3 ให้เป็นไปตามเกณฑ์ที่กำหนด</p>
+                                </div>
+                            </div>
+                            <div class="p-6 border-l-4 border-primary bg-surface-container rounded-r-xl">
+                                <p class="italic text-on-surface font-sarabun leading-relaxed">"การเรียนรู้คณิตศาสตร์ ไม่ใช่แค่การจำสูตร แต่คือการสร้างกระบวนการคิดที่เป็นระบบให้กับนักเรียน"</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-school"></i>
-                        <div>
-                            <strong>สังกัด</strong>
-                            <p>โรงเรียนเทศบาลท่าอิฐ กองการศึกษา เทศบาลท่าอิฐ</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div>
-                            <strong>วิชาที่สอน</strong>
-                            <p>คณิตศาสตร์ และรายวิชาอื่นๆ ตามหลักสูตร</p>
+                    <div class="bg-surface-container-lowest p-2 rounded-3xl editorial-shadow">
+                        <div class="rounded-2xl overflow-hidden aspect-video">
+                            <img alt="Classroom Innovation" class="w-full h-full object-cover" src="รูปผลงาน/S__2859198_0.jpg"/>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="pa" class="section gray-bg">
-        <div class="container">
-            <div class="section-header">
-                <h2>ข้อตกลงในการพัฒนางาน (PA)</h2>
-            </div>
-            <div class="infographic-grid">
-                <div class="info-box">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>ด้านการจัดการเรียนรู้</h3>
-                    <ul>
-                        <li>พัฒนาหลักสูตรและออกแบบการจัดการเรียนรู้</li>
-                        <li>สร้างและพัฒนสื่อ นวัตกรรม เทคโนโลยี</li>
-                        <li>วัดและประเมินผลการเรียนรู้</li>
-                        <li>ศึกษา วิเคราะห์ สังเคราะห์ เพื่อแก้ปัญหา</li>
-                    </ul>
-                </div>
-                <div class="info-box orange">
-                    <i class="fas fa-user-friends"></i>
-                    <h3>ด้านการส่งเสริมและสนับสนุน</h3>
-                    <ul>
-                        <li>จัดทำข้อมูลสารสนเทศของผู้เรียน</li>
-                        <li>ดำเนินการตามระบบดูแลช่วยเหลือผู้เรียน</li>
-                        <li>ปฏิบัติงานวิชาการและงานอื่นๆ</li>
-                        <li>ประสานความร่วมมือกับผู้ปกครอง</li>
-                    </ul>
-                </div>
-                <div class="info-box teal">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>ด้านการพัฒนาตนเองและวิชาชีพ</h3>
-                    <ul>
-                        <li>พัฒนาตนเองอย่างเป็นระบบและต่อเนื่อง</li>
-                        <li>มีส่วนร่วมในการแลกเปลี่ยนเรียนรู้ (PLC)</li>
-                        <li>นำความรู้มาใช้ในการพัฒนาการจัดการเรียนรู้</li>
-                        <li>สร้างนวัตกรรมการเรียนรู้</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="challenge" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>ประเด็นท้าทาย & นวัตกรรม</h2>
-            </div>
-            <div class="challenge-box">
-                <div style="text-align: center; margin-bottom: 40px;">
-                    <i class="fas fa-lightbulb" style="font-size: 4rem; color: var(--secondary);"></i>
-                    <h3 style="margin-top: 20px;">การพัฒนาทักษะคณิตศาสตร์ เรื่อง "การบวกที่ผลบวกไม่เกิน 100"</h3>
-                    <p style="color: var(--primary-dark); font-weight: bold;">สำหรับนักเรียนชั้นประถมศึกษาปีที่ 1/3</p>
-                </div>
-                <div class="stat-grid">
-                    <div class="stat-item">
-                        <span class="stat-number">25</span>
-                        <p>นักเรียนกลุ่มเป้าหมาย (คน)</p>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">4</span>
-                        <p>ชุดแบบฝึกทักษะ</p>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">60%</span>
-                        <p>เป้าหมายการผ่านเกณฑ์</p>
+        <!-- Recent Activities (Gallery) -->
+        <section id="gallery" class="py-24 bg-surface">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex justify-between items-end mb-16">
+                    <div>
+                        <h2 class="text-sm font-bold text-primary tracking-[0.2em] uppercase mb-4 font-kanit">Evidence of Practice</h2>
+                        <h3 class="text-4xl font-extrabold text-on-background font-headline">รูปผลงานและการดำเนินงาน</h3>
                     </div>
                 </div>
-                <div style="margin-top: 50px;">
-                    <h4 style="margin-bottom: 20px;"><i class="fas fa-cogs"></i> วิธีการดำเนินงาน</h4>
-                    <p>มุ่งเน้นการจัดการเรียนรู้เชิงรุก (Active Learning) โดยใช้สื่อการสอนที่ทันสมัยและแบบฝึกทักษะที่ออกแบบมาเฉพาะเพื่อกระตุ้นความสนใจของนักเรียนระดับชั้น ป.1 ช่วยให้การบวกเลขเป็นเรื่องสนุกและเข้าใจง่ายขึ้น</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Activity 1 -->
+                    <div class="bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow group cursor-pointer">
+                        <div class="aspect-square overflow-hidden relative">
+                            <img alt="Project 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="รูปผลงาน/S__2859199_0.jpg"/>
+                        </div>
+                        <div class="p-8">
+                            <h4 class="text-xl font-bold text-on-surface mb-2 font-kanit">บรรยากาศห้องเรียน</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed font-sarabun">การจัดสภาพแวดล้อมที่เอื้อต่อการเรียนรู้ กระตุ้นความสนใจของนักเรียนชั้นประถมศึกษา</p>
+                        </div>
+                    </div>
+                    <!-- Activity 2 -->
+                    <div class="bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow group cursor-pointer">
+                        <div class="aspect-square overflow-hidden relative">
+                            <img alt="Project 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="รูปผลงาน/S__2859226_0.jpg"/>
+                        </div>
+                        <div class="p-8">
+                            <h4 class="text-xl font-bold text-on-surface mb-2 font-kanit">สื่อการสอนนวัตกรรม</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed font-sarabun">การใช้สื่อและชุดแบบฝึกทักษะที่ออกแบบมาเฉพาะเพื่อพัฒนาการบวกเลข</p>
+                        </div>
+                    </div>
+                    <!-- Activity 3 -->
+                    <div class="bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow group cursor-pointer">
+                        <div class="aspect-square overflow-hidden relative">
+                            <img alt="Project 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="รูปผลงาน/S__51109929_0.jpg"/>
+                        </div>
+                        <div class="p-8">
+                            <h4 class="text-xl font-bold text-on-surface mb-2 font-kanit">ความสำเร็จของนักเรียน</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed font-sarabun">นักเรียนสามารถนำความรู้ไปใช้และมีผลสัมฤทธิ์ทางการเรียนที่สูงขึ้น</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="gallery" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>รูปผลงานและการดำเนินงาน</h2>
+    <!-- Footer -->
+    <footer class="bg-[#eeeef0] py-12 px-8 border-t border-[#dfbec5]/15">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto w-full">
+            <div>
+                <div class="font-bold text-[#860040] text-xl mb-4 font-plus-jakarta-sans">PA PORTFOLIO</div>
+                <p class="text-slate-500 font-sarabun text-sm tracking-wide leading-relaxed">
+                    © 2568 ครูพรรณปภรณ์ เกษวิริยะกิจ <br/>
+                    โรงเรียนเทศบาลท่าอิฐ กองการศึกษา เทศบาลเมืองอุตรดิตถ์
+                </p>
             </div>
-            <div class="gallery">
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__2859198_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">กิจกรรมการสอนคณิตศาสตร์</div>
-                </div>
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__2859199_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">บรรยากาศห้องเรียน</div>
-                </div>
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__2859226_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">สื่อการสอนนวัตกรรม</div>
-                </div>
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__2859233_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">การวัดและประเมินผล</div>
-                </div>
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__2859234_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">ผลงานนักเรียน</div>
-                </div>
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__50544730_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">การแลกเปลี่ยนเรียนรู้ (PLC)</div>
-                </div>
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__51109929_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">นวัตกรรมการสอนแบบใหม่</div>
-                </div>
-                <div class="gallery-card">
-                    <img src="รูปผลงาน/S__51453974_0.jpg" alt="ผลงาน">
-                    <div class="overlay-text">ความสำเร็จของนักเรียน</div>
+            <div>
+                <h4 class="text-primary font-bold mb-4 uppercase text-xs tracking-widest font-kanit">เมนู</h4>
+                <ul class="space-y-2 font-kanit">
+                    <li><a class="text-slate-500 text-sm hover:text-[#860040] transition-colors" href="index.html">หน้าแรก</a></li>
+                    <li><a class="text-slate-500 text-sm hover:text-[#860040] transition-colors" href="profile.html">ข้อมูลส่วนตัว</a></li>
+                    <li><a class="text-slate-500 text-sm hover:text-[#860040] transition-colors" href="pa-performance.html">ข้อตกลง PA</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-primary font-bold mb-4 uppercase text-xs tracking-widest font-kanit">ติดต่อ</h4>
+                <div class="flex flex-col space-y-2 font-sarabun">
+                    <p class="text-slate-500 text-sm">โรงเรียนเทศบาลท่าอิฐ</p>
+                    <p class="text-slate-500 text-sm">สังกัดเทศบาลเมืองอุตรดิตถ์</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 พรรณปภรณ์ เกษวิริยะกิจ - โรงเรียนเทศบาลท่าอิฐ</p>
-            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 10px;">กองการศึกษา เทศบาลเมืองอุตรดิตถ์</p>
         </div>
     </footer>
-
-    <script>
-        // Smooth Scrolling
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                window.scrollTo({
-                    top: targetElement.offsetTop - 70,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Simple Intersection Observer for animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.info-box, .stat-item, .gallery-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
 </body>
 </html>
